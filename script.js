@@ -6,7 +6,8 @@ const divide = (arr, n) => {
 
 	
 	let trackingSum=0 , ans=[] ,subArr =[];
-	if(let i=0;i<=arr.length;i++){
+	
+	for(let i=0;i<=arr.length;i++){
 		if(trackingSum +arr[i] <= n){
 			subArr.push(arr[i]);
 			trackingSum+=arr[i];
